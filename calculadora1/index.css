@@ -1,0 +1,51 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    width: 140px;
+    text-align: center;
+    background-color: grey;
+    border: none;
+    font-size: 30px;
+    margin-top: 160px;
+    margin-left: 569px;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    border: none;
+    width: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px black;
+    background-color: green;
+}
+
+p {
+    height: 40px;
+    background-color: white;
+    text-align: right;
+    max-width: 193px;
+    font-size: 33px;
+}
+
+.equals {
+    width: 126px;
+}
+
+.fix_button{
+    width: 160px;
+    border: none;
+}
+
+.fix_button:hover{
+    background-color: red;
+    box-shadow: 5px 5px 5px red;
+}
