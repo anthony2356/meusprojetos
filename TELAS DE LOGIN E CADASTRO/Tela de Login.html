@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="import" href="Tela de Cadastro.html">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,900;1,900&display=swap');
+
+        body {
+            background-color: black;
+        }
+
+        label {
+            font-family: 'Roboto', sans-serif;
+            color: cyan;
+            font-size: 20px;
+        }
+
+        fieldset {
+            text-align: center;
+            border: none;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input {
+            border: none;
+            font-family: 'Roboto', sans-serif;
+            font-size: 20px;
+        }
+
+        input:hover {
+            background-color: rgb(209, 196, 178);
+            box-shadow: 4px 4px 4px cyan;
+            cursor: pointer;
+        }
+
+        h1 {
+            font-family: 'Roboto', sans-serif;
+            color: cyan;
+        }
+
+        button {
+            font-size: 40px;
+            cursor: pointer;
+            border: none;
+            margin-left: 10px;
+        }
+
+        button:hover {
+            box-shadow: 4px 4px 4px cyan;
+            background-color: rgb(209, 196, 178);
+
+        }
+
+        strong {
+            color: rgb(7, 153, 153);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div>
+                <h1><strong>LOGIN</strong></h1>
+                <br>
+                <form action="">
+                    <fieldset>
+                        <br>
+                        <label><strong>Nome Completo:</strong></label>
+                        <input type="text" id="30789" required><br><br>
+                        <label><strong>Senha:</strong></label>
+                        <input type="password" id="30790" required>
+                        <br><br><br><br>
+                        <button type="submit"><strong>Entrar</strong></button>
+                        <button onclick="limpar()"><strong>Limpar</strong></button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function limpar() {
+        alert('limpando...')
+        let nome_completo = document.getElementById("30789").value;
+        document.getElementById("30789").value = "";
+        let senha = document.getElementById("30790").value;
+        document.getElementById("30790").value = "";
+    }
+</script>
+
+</html>

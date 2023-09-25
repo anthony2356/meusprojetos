@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Cadastro</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,900;1,900&display=swap');
+
+        body {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .fieldset_principal {
+            margin-left: 35%;
+            font-family: arial;
+        }
+
+        .fieldset_sexo {
+            text-align: left;
+            margin-left: 59px;
+        }
+
+        .fieldset_nacionalidade {
+            margin-left: -10px;
+        }
+
+        .fieldset_localidade_geográfica {
+            margin-left: -10px;
+        }
+
+        .fieldset_linguagens_programação {
+            margin-left: -25px;
+        }
+
+        fieldset {
+            border: transparent;
+            margin-top: -12px;
+        }
+
+        textarea {
+            resize: none;
+            box-shadow: 4px 4px 4px black;
+            border: none;
+            outline: none;
+            text-align: left;
+            margin-left: -10px;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        textarea:hover {
+            background-color: rgb(209, 196, 178);
+        }
+
+        input {
+            box-shadow: 4px 4px 4px black;
+            border: none;
+            outline: none;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        input:hover {
+            background-color: rgb(209, 196, 178);
+            box-shadow: 4px 4px 4px cyan;
+            cursor: pointer;
+        }
+
+        h1 {
+            color: cyan;
+        }
+
+        strong {
+            color: rgb(7, 153, 153);
+        }
+
+        button {
+            margin-left: 100px;
+            font-size: 26px;
+            border: none;
+            cursor: pointer;
+            width: 16%;
+            margin-left: 2px;
+            box-shadow: 3px 3px 3px black;
+        }
+
+        button:hover {
+            background-color: grey;
+            box-shadow: 4px 4px 4px black;
+        }
+
+        .texto_1 {
+            margin-left: 1%;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .texto_3 {
+            margin-left: -18px;
+        }
+
+        .texto_2 {
+            margin-left: -2%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            <div>
+                <footer>
+                    <h1 class="texto_1"><strong>CADASTRO DEVS</strong></h1>
+                    <fieldset class="fieldset_principal">
+                        <fieldset class="fieldset_sexo">
+                            <h3><strong>Insira seus dados logo abaixo:</strong></h3>
+                            <label for="nome_de_usuário"><strong>Nome Completo:</strong></label>
+                            <input type="text" name="nome_de_usuário" id="302742" required> <br><br>
+                            <label for="senha_de_usuário"><strong>Criar Senha:</strong></label>
+                            <input type="password" name="senha_de_usuário" id="302944" required> <br><br>
+                            <h3><strong>Defina sua data de nascimento:</strong></h3>
+                            <label for="data_de_nascimento"><strong>Data de nascimento</strong></label>
+                            <input type="date" name="data_de_nascimento" id="303146" required>
+                            <br><br>
+                            <h3><strong>Defina seu Gênero Sexual:</strong></h3>
+                            <label for="masculino"><strong>Masculino</strong></label>
+                            <input type="radio" name="gênero" value="masculino" required><br><br>
+                            <label for="feminino"><strong>Feminino</strong></label>
+                            <input type="radio" name="gênero" value="feminino" required><br><br>
+                            <fieldset>
+                                <div>
+                                    <div>
+                                        <div>
+                                            <div>
+                                                <h3 class="texto_3"><strong>Escolha cinco linguagens de
+                                                        programação</strong>
+                                                </h3>
+                                                <fieldset class="fieldset_linguagens_programação">
+                                                    <label for="Javascript"><strong>Javascript</strong></label>
+                                                    <input type="checkbox" name="Javascript" id="40320950"><br><br>
+                                                    <label for="Python"><strong>Python</strong></label>
+                                                    <input type="checkbox" name="Python" id="4030960"><br><br>
+                                                    <label for="PHP"><strong>PHP</strong></label>
+                                                    <input type="checkbox" name="PHP" id="4040970"><br><br>
+                                                    <label for="Ruby"><strong>Ruby</strong></label>
+                                                    <input type="checkbox" name="Ruby" id="4050980"><br><br>
+                                                    <label for="C#"><strong>C#</strong></label>
+                                                    <input type="checkbox" name="C#" id="4060990"><br><br>
+                                                    <label for="Java"><strong>Java</strong></label>
+                                                    <input type="checkbox" name="Java" id="40701000"><br><br>
+                                                    <label for="MySQL"><strong>MySQL</strong></label>
+                                                    <input type="checkbox" name="MySQL" id="40801010"><br><br>
+                                                    <label for="SQL"><strong>SQL</strong></label>
+                                                    <input type="checkbox" name="SQL" id="40901020"><br><br>
+                                                    <label for="Go"><strong>Go</strong></label>
+                                                    <input type="checkbox" name="Go" id="401001030"><br><br>
+                                                    <label for="C"><strong>C</strong></label>
+                                                    <input type="checkbox" name="C" id="402001040"><br><br>
+                                                    <label for="Bash"><strong>Bash</strong></label>
+                                                    <input type="checkbox" name="Bash" id="403001050"><br><br>
+                                                    <label for="Bat"><strong>Bat</strong></label>
+                                                    <input type="checkbox" name="Bat" id="404001060"><br>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="fieldset_nacionalidade">
+                                <h3><strong>Defina sua nacionalidade:</strong></h3>
+                                <label for="nacionalidade"><strong>Nacionalidade:</strong></label>
+                                <input type="text" name="nacionalidade" id="303247" required>
+                            </fieldset>
+                            <br>
+                            <fieldset class="fieldset_localidade_geográfica">
+                                <h3><strong>Aonde você mora:</strong></h3>
+                                <label for="cidade_em_que_mora"><strong>Cidade:</strong></label>
+                                <input type="text" name="cidade_em_que_mora" id="303348" required> <br><br>
+                                <label for="estado_em_que_mora"><strong>Estado:</strong></label>
+                                <input type="text" name="estado_em_que_mora" id="303449" required>
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <h3 class="texto_2"><strong>Conte um pouco sobre você:</strong></h3>
+                                <textarea name="campo_de_texto" id="303550" cols="30" rows="10"></textarea>
+                            </fieldset>
+                            <br>
+                            <button type="submit"><strong>Enviar</strong></button>
+                            <button onclick="limpar_formulário()"><strong>Limpar</strong></button>
+                        </fieldset>
+                    </fieldset>
+                </footer>
+            </div>
+        </div>
+    </form>
+
+</body>
+<script>
+    //alert("preencha os dados, e se inserir algo errado, poderá limpar tudo e recomeçar o preenchimento dos dados")
+
+    // dados principais [nome completo], [email inserido], [senha], [telefone]
+
+    let dados1 = document.getElementById("302742").value;
+    let dados3 = document.getElementById("302944").value;
+
+    // data de nascimento
+
+    let dados5 = document.getElementById("303146").value;
+
+    // linguagens de programação 
+
+    let dados6 = document.getElementById("40320950").value;
+    let dados7 = document.getElementById("4030960").value;
+    let dados8 = document.getElementById("4040970").value;
+    let dados9 = document.getElementById("4050980").value;
+    let dados10 = document.getElementById("4060990").value;
+    let dados11 = document.getElementById("40701000").value;
+    let dados12 = document.getElementById("40801010").value;
+    let dados13 = document.getElementById("40901020").value;
+    let dados14 = document.getElementById("401001030").value;
+    let dados15 = document.getElementById("402001040").value;
+    let dados16 = document.getElementById("403001050").value;
+    let dados17 = document.getElementById("404001060").value;
+
+    // nacionalidade
+
+    let dados18 = document.getElementById("303247").value;
+
+    // localidade geográfica
+
+    let dados19 = document.getElementById("303348").value;
+    let dados20 = document.getElementById("303449").value;
+
+    // caixa de mensagem
+
+    let dados21 = document.getElementById("303550").value;
+
+    function limpar_formulário() {
+        alert("limpando dados de cadastro...")
+        let dados1 = document.getElementById("302742").value;
+        document.getElementById("302742").value = "";
+        let dados2 = document.getElementById("302843").value;
+        document.getElementById("302843").value = "";
+        let dados3 = document.getElementById("302944").value;
+        document.getElementById("302944").value = "";
+        let dados4 = document.getElementById("303045").value;
+        document.getElementById("303045").value = "";
+        let dados5 = document.getElementById("303146").value;
+        document.getElementById("303146").value = "";
+        let dados6 = document.getElementById("40320950").value;
+        document.getElementById("40320950").value = "";
+        let dados7 = document.getElementById("4030960").value;
+        document.getElementById("4030960").value = "";
+        let dados8 = document.getElementById("4040970").value;
+        document.getElementById("4040970").value = "";
+        let dados9 = document.getElementById("4050980").value;
+        document.getElementById("4050980").value = "";
+        let dados10 = document.getElementById("4060990").value;
+        document.getElementById("4060990").value = "";
+        let dados11 = document.getElementById("40701000").value;
+        document.getElementById("40701000").value = "";
+        let dados12 = document.getElementById("40801010").value;
+        document.getElementById("40801010").value = "";
+        let dados13 = document.getElementById("40901020").value;
+        document.getElementById("40901020").value = "";
+        let dados14 = document.getElementById("401001030").value;
+        document.getElementById("401001030").value = "";
+        let dados15 = document.getElementById("402001040").value;
+        document.getElementById("402001040").value = "";
+        let dados16 = document.getElementById("403001050").value;
+        document.getElementById("403001050").value = "";
+        let dados17 = document.getElementById("404001060").value;
+        document.getElementById("404001060").value = "";
+        let dados18 = document.getElementById("303247").value;
+        document.getElementById("303247").value = "";
+        let dados19 = document.getElementById("303348").value;
+        document.getElementById("303348").value = "";
+        let dados20 = document.getElementById("303449").value;
+        document.getElementById("303449").value = "";
+        let dados21 = document.getElementById("303550").value;
+        document.getElementById("303550").value = "";
+
+    }
+</script>
+
+</html>

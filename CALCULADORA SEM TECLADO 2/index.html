@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA || SEM TECLADO 2</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        fieldset {
+            width: 40%;
+            text-align: center;
+            background-color: grey;
+            border: none;
+            font-size: 20px;
+            margin-top: 174px;
+            margin-left: 395px;
+            border-radius: 5px;
+        }
+
+        button {
+            border: none;
+            width: 125px;
+            cursor: pointer;
+            font-size: 18px;
+            margin-top: 7px;
+            margin-left: 20px;
+        }
+
+        button:hover {
+            box-shadow: 3px 3px 3px black;
+        }
+
+        input {
+            border: none;
+            outline: none;
+        }
+
+        input:hover {
+            box-shadow: 3px 3px 3px black;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <br>
+        <label><strong>VALOR INICIAL:</strong></label>
+        <input id="valor_universal"><br><br><br>
+        <label><strong>SOMAR COM:</strong></label>
+        <input id="valor_um"> <button onclick="calculo1()"><strong>Calcular</strong></button> <br>
+        <label><strong>SUBTRAIR COM:</strong></label>
+        <input id="valor_dois"><button onclick="calculo2()"><strong>Calcular</strong></button> <br>
+        <label><strong>MULTIPLICAR COM:</strong></label>
+        <input id="valor_tres"><button onclick="calculo3()"><strong>Calcular</strong></button> <br>
+        <label><strong>DIVIDIR COM:</strong></label>
+        <input id="valor_quatro"><button onclick="calculo4()"><strong>Calcular</strong></button> <br>
+        <label><strong>PORCENTAGEM DE:</strong></label>
+        <input id="valor_cinco"><button onclick="calculo5()"><strong>Calcular</strong></button>
+        <br><br><br>
+        <button onclick="mostrar_todos_os_resultados()"><strong>Mostrar tudo</strong></button>
+        <button onclick="limpar_todos_os_campos()"><strong>Limpar tudo</strong></button>
+        <button onclick="limpar_valor_universal()">
+            <strong>Limpar VI</strong>
+        </button>
+    </fieldset>
+</body>
+<script>
+    function calculo1() {
+        let valor1 = Number(document.getElementById('valor_um').value);
+        let valorUniversal = Number(document.getElementById('valor_universal').value);
+        c1 = valor1 + valorUniversal
+        alert('o resultado da conta sera : ' + c1);
+    }
+    function calculo2() {
+        let valor1 = Number(document.getElementById('valor_dois').value);
+        let valorUniversal = Number(document.getElementById('valor_universal').value);
+        c2 = valor1 - valorUniversal
+        alert('o resultado da conta sera : ' + c2);
+    }
+    function calculo3() {
+        let valor1 = Number(document.getElementById('valor_tres').value);
+        let valorUniversal = Number(document.getElementById('valor_universal').value);
+        c3 = valor1 * valorUniversal
+        alert('o resultado da conta sera : ' + c3);
+    }
+    function calculo4() {
+        let valor1 = Number(document.getElementById('valor_quatro').value);
+        let valorUniversal = Number(document.getElementById('valor_universal').value);
+        c4 = valor1 / valorUniversal
+        alert('o resultado da conta sera : ' + c4);
+    }
+    function calculo5() {
+        let valor1 = Number(document.getElementById('valor_cinco').value);
+        c5 = valor1 / 100
+        alert('o resultado da conta sera : ' + c5);
+    }
+    function mostrar_todos_os_resultados() {
+        calculo1()
+        calculo2()
+        calculo3()
+        calculo4()
+        calculo5()
+    }
+    function limpar_todos_os_campos() {
+        alert('removendo valores...')
+        alert('valores removidos com sucesso !')
+        let valorUniversal = Number(document.getElementById('valor_universal').value);
+        document.getElementById('valor_universal').value = "";
+        let valor1 = Number(document.getElementById('valor_um').value);
+        document.getElementById('valor_um').value = "";
+        let valor2 = Number(document.getElementById('valor_dois').value);
+        document.getElementById('valor_dois').value = "";
+        let valor3 = Number(document.getElementById('valor_tres').value);
+        document.getElementById('valor_tres').value = "";
+        let valor4 = Number(document.getElementById('valor_quatro').value);
+        document.getElementById('valor_quatro').value = "";
+        let valor5 = Number(document.getElementById('valor_cinco').value);
+        document.getElementById('valor_cinco').value = "";
+    }
+    function limpar_valor_universal() {
+        alert('limpando valores de Valor Inicial..')
+        alert('valores removidos com sucesso !')
+        let valorUniversal = Number(document.getElementById('valor_universal').value);
+        document.getElementById('valor_universal').value = "";
+    }
+</script>
+
+</html>

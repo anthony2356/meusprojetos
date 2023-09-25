@@ -1,0 +1,61 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    margin-left: 630px;
+    margin-top: 60px;
+    font-size: 3em;
+}
+
+button {
+    box-shadow: 3px 3px 3px black;
+    font-size: 30px;
+    margin-top: 180px;
+    margin-left: 425px;
+    cursor: pointer;
+    border: none;
+}
+
+a {
+    box-shadow: 3px 3px 3px black;
+    font-size: 40px;
+    margin-left: 825px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+input {
+    border: none;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+label {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 20px;
+    color: white;
+    background-color: black;
+}
+
+a:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 5px white;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+button:hover {
+    box-shadow: 5px 5px 5px white;
+}
+
+input:hover {
+    box-shadow: 3px 3px 3px white;
+}

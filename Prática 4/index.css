@@ -1,0 +1,22 @@
+body {
+    background-color: black;
+    text-align: center;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-left: -72%;
+    margin-top: 30px;
+}
+
+legend {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 30px;
+}
+
+button {
+    cursor: pointer;
+}

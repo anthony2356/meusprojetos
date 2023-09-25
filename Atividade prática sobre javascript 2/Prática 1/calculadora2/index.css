@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    width: 40%;
+    text-align: center;
+    background-color: grey;
+    border: none;
+    font-size: 20px;
+    margin-top: 174px;
+    margin-left: 395px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    width: 125px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 7px;
+    margin-left: 20px;
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px black;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+input:hover {
+    box-shadow: 3px 3px 3px black;
+}

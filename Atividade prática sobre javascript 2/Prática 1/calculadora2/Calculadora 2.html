@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULADORA || VALOR UNIVERSAL</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <fieldset>
+        <br>
+        <label><strong>VALOR UNIVERSAL:</strong></label>
+        <input id="valor_universal"><br><br><br>
+        <label><strong>SOMAR COM:</strong></label>
+        <input id="valor_um"> <button onclick="cálculo1()"><strong>Calcular</strong></button> <br>
+        <label><strong>SUBTRAIR COM:</strong></label>
+        <input id="valor_dois"><button onclick="cálculo2()"><strong>Calcular</strong></button> <br>
+        <label><strong>MULTIPLICAR COM:</strong></label>
+        <input id="valor_tres"><button onclick="cálculo3()"><strong>Calcular</strong></button> <br>
+        <label><strong>DIVIDIR COM:</strong></label>
+        <input id="valor_quatro"><button onclick="cálculo4()"><strong>Calcular</strong></button> <br><br>
+        <button onclick="mostrar_todos_os_resultados()"><strong>Mostrar tudo</strong></button>
+        <button onclick="limpar_todos_os_campos()"><strong>Limpar tudo</strong></button>
+        <button onclick="limpar_valor_universal()">
+            <strong>Limpar VU</strong>
+        </button>
+    </fieldset>
+</body>
+<script src="index.js"></script>
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criador de Objetos</title>
+    <style>
+        body {
+            background-color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        button {
+            border: none;
+            width: 350px;
+            cursor: pointer;
+            font-size: 45px;
+            margin-top: 130px;
+            margin-left: 20px;
+        }
+
+        button:hover {
+            box-shadow: 13px 13px 13px rgb(0, 255, 76);
+        }
+
+        label {
+            color: white;
+        }
+
+        input {
+            outline: none;
+            top: 20px;
+        }
+
+        fieldset {
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+    <fieldset>
+        <br><br><br><br>
+        <label><strong>Insira um nome : </strong></label>
+        <input id="nome"> <br><br>
+        <label><strong>Insira uma idade : </strong></label>
+        <input id="idade"> <br><br>
+        <label><strong>Insira uma profissão : </strong></label>
+        <input id="profissão"> <br><br>
+        <label><strong>Insira um veículo : </strong></label>
+        <input id="veículo"> <br><br>
+        <button onclick="criar_objeto()"><strong>CRIAR OBJETO</strong></button>
+        <button onclick="limpar_dados()"><strong>LIMPAR DADOS</strong></button>
+    </fieldset>
+
+</body>
+<script>
+    function criar_objeto() {
+        let obj = {
+            nome: document.getElementById('nome').value,
+            idade: document.getElementById('idade').value,
+            profissão: document.getElementById('profissão').value,
+            veículo: document.getElementById('veículo').value
+        }
+        alert('Objeto criado com sucesso !, Confira no console')
+        console.log(obj)
+    }
+
+    function limpar_dados() {
+        let nome = document.getElementById('nome').value;
+        document.getElementById('nome').value = "";
+        let idade = document.getElementById('idade').value;
+        document.getElementById('idade').value = "";
+        let profissão = document.getElementById('profissão').value;
+        document.getElementById('profissão').value = "";
+        let veículo = document.getElementById('veículo').value;
+        document.getElementById('veículo').value = "";
+    }
+</script>
+
+</html>

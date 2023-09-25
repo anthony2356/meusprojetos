@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+fieldset {
+    width: 140px;
+    text-align: center;
+    background-color: grey;
+    border: none;
+    font-size: 30px;
+    margin-top: 160px;
+    margin-left: 569px;
+    border-radius: 5px;
+}
+
+button {
+    border: none;
+    width: 25px;
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 7px;
+}
+
+button:hover {
+    box-shadow: 3px 3px 3px black;
+}
+
+p {
+    height: 40px;
+    background-color: white;
+    text-align: right;
+}
+
+.equals {
+    width: 126px;
+}
