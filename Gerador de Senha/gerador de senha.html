@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gerador de senha.css">
+    <title>Gerador de Senha</title>
+</head>
+
+<body>
+    <fieldset class="interface_de_criação">
+        <legend><strong>CRIAÇÃO DA SENHA</strong></legend>
+        <label><strong>com letras maiúsculas :</strong></label>
+        <input id="com letras maiúsculas"><br>
+        <label><strong>com letras minúsculas :</strong></label>
+        <input id="com letras minúsculas"><br>
+        <label><strong>com símbolos :</strong></label>
+        <input id="símbolos"><br><br>
+        <button class="limpar" onclick="limpar_dados()" style="background-color: green;"><strong>Limpar Dados</strong></button>
+    </fieldset><br>
+    <fieldset class="interface_de_geração">
+        <legend><strong>GERAÇÃO DA SENHA</strong></legend>
+        <p class="senha" id="senha"><strong></strong></p><br>
+        <button onclick="criar()" class="g" style="background-color: green; border: none; cursor: pointer;"><strong>Gerar Senha</strong></button>
+        <button onclick="restaurar()" class="r" style="background-color: green; border: none; cursor: pointer;"><strong>Restaurar Tamanho</strong></button>
+        <button onclick="limpar()" class="l" style="background-color: red; border: none; cursor: pointer;"><strong>Limpar Senha</strong></button>
+    </fieldset>
+</body>
+<script>
+    alert('gerador de senha mas vc define o resto, do seu jeito :)')
+</script>
+<script src="criar senha.js"></script>
+<script src="limpar senha.js"></script>
+<script src="restaurar tamanho.js"></script>
+
+</html>
