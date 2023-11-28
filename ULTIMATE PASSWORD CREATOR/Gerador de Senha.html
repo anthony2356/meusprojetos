@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="Gerador de Senha.css">
+  <title>ULTIMATE PASSWORD CREATOR</title>
+</head>
+
+<body>
+  <fieldset class="ui">
+    <fieldset class="content">
+      <h1><strong>Here its your password :</strong></h1>
+      <textarea id="password-created"></textarea>
+      <button onclick="gerar_senha()"><strong>Generate password</strong></button>
+      <button onclick="restaurar_tamanho()"><strong>Reset UI size</strong></button>
+      <button onclick="limpar_senha()" style="background-color: red;"><strong>Clear Password</strong></button>
+    </fieldset>
+    <fieldset class="content2">
+      <label><strong>Uppercase:</strong></label>
+      <input id="uppercase"><br>
+      <label><strong>Lowercase:</strong></label>
+      <input id="lowercase"><br>
+      <label><strong>Symbols:</strong></label>
+      <input id="simbols"><br><br>
+      <button onclick="limpar_dados()" style="background-color: red;"><strong>Clear Data</strong></button>
+    </fieldset>
+  </fieldset><br><br><br>
+  <fieldset class="link">
+    <a href="https://www.passwordmonster.com/" target="_blank">Check Password security</a>
+  </fieldset>
+</body>
+<script src="criar senha.js"></script>
+<script src="limpar.js"></script>
+<script src="restaurar tamanho.js"></script>
+</html>
